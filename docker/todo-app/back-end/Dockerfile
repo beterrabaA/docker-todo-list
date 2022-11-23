@@ -1,6 +1,6 @@
 FROM node:14
 
-WORKDIR /app
+WORKDIR /todo-app/back-end
 
 EXPOSE 3001
 
@@ -8,4 +8,4 @@ ADD ./node_modules.tar.gz .
 
 COPY . .
 
-CMD [ "npm start" ]
+ENTRYPOINT [ "npm", "start" ]
